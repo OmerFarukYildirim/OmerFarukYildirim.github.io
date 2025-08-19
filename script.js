@@ -26,3 +26,13 @@ yesBtn.addEventListener("click", () => {
     gifResult.play();
   }, 3000);
 });
+
+document.querySelector('.js-yes-btn').addEventListener('click', function() {
+  // "O zaman bekle" yazısını göster
+  document.querySelector('.question-container').style.display = 'none';
+  document.querySelector('.result-container').style.display = 'block';
+  // 2 saniye sonra yönlendir
+  setTimeout(function() {
+    window.location.href = 'https://www.belleamour.com';
+  }, 2000);
+});
