@@ -1,11 +1,10 @@
 const questionContainer = document.querySelector(".question-container");
 const resultContainer = document.querySelector(".result-container");
 const gifResult = document.querySelector(".gif-result");
-const heartLoader = document.querySelector(".cssload-main");
 const yesBtn = document.querySelector(".js-yes-btn");
 const noBtn = document.querySelector(".js-no-btn");
 
-// /change the postion of no button
+// No butonunun yerini değiştir
 noBtn.addEventListener("mouseover", () => {
   const newX = Math.floor(Math.random() * questionContainer.offsetWidth);
   const newY = Math.floor(Math.random() * questionContainer.offsetWidth);
@@ -14,25 +13,12 @@ noBtn.addEventListener("mouseover", () => {
   noBtn.style.top = `${newY}px`;
 });
 
-// yes button functionality
-
+// Yes butonuna tıklanınca
 yesBtn.addEventListener("click", () => {
   questionContainer.style.display = "none";
-  heartLoader.style.display = "inherit";
-
-  const timeoutId = setTimeout(() => {
-    heartLoader.style.display = "none";
-    resultContainer.style.display = "inherit";
-    gifResult.play();
-  }, 3000);
-});
-
-document.querySelector('.js-yes-btn').addEventListener('click', function() {
-  // "O zaman bekle" yazısını göster
-  document.querySelector('.question-container').style.display = 'none';
-  document.querySelector('.result-container').style.display = 'block';
-  // 2 saniye sonra yönlendir
-  setTimeout(function() {
-    window.location.href = 'https://www.belleamour.com';
-  }, 2000);
+  resultContainer.style.display = "block";
+  gifResult.play();
+  setTimeout(() => {
+    window.location.href = "https://www.youtube.com";
+  }, 2000); // 2 saniye sonra yönlendir
 });
