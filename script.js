@@ -19,6 +19,6 @@ yesBtn.addEventListener("click", () => {
   resultContainer.style.display = "block";
   gifResult.play();
   setTimeout(() => {
-    window.location.href = "https://belleamourshop.com/";
+    window.location.href = "https://belleamourshop.com/sevgilim/omer-ozge";
   }, 2000); // 2 saniye sonra yönlendir
 });
