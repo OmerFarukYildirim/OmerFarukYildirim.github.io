@@ -1,7 +1,4 @@
 
-  # Valentine's Day website
-
-  This is a code bundle for Valentine's Day website. The original project is available at https://www.figma.com/design/wBBsvbcThP9bNWCCfTWekO/Valentine-s-Day-website.
 
   ## Running the code
 
