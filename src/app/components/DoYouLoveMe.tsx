@@ -48,7 +48,7 @@ export function DoYouLoveMe({ onYesClick }: DoYouLoveMeProps) {
     <div className="do-you-love-me-wrapper">
       {!showResult ? (
         <div className="question-container-custom container-custom" ref={questionContainerRef}>
-          <video className="local-gif" src="reply-me-love.mp4" autoPlay muted loop />
+          <video className="local-gif" src="/reply-me-love.mp4" autoPlay muted loop />
           <h2 className="question-custom">Beni Seviyor musun?</h2>
           
           <div className="button-container-custom" style={{ position: 'relative', height: '150px' }}>
@@ -85,7 +85,7 @@ export function DoYouLoveMe({ onYesClick }: DoYouLoveMeProps) {
         </div>
       ) : (
         <div className="result-container-custom container-custom">
-          <video className="gif-result" src="love-me.mp4" autoPlay loop />
+          <video className="gif-result" src="/love-me.mp4" autoPlay loop />
           <h2>Başka ihtimal olmadığını ikimizde biliyoruz :D Şimdi gidiyoruz 😍!</h2>
         </div>
       )}
